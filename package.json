@@ -24,9 +24,10 @@
 	},
 	"contributors": [],
 	"scripts": {
-		"dev": "",
+		"dev": "node server.js",
 		"test": "",
-		"start": "node server.js"
+		"start": "node server.js",
+		"build": "echo 'No build step necessary'"
 	},
 	"overrides": {
 		"rxjs": "^6.6.7"
