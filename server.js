@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 const chatModel = new AzureChatOpenAI({
-	azureOpenAIApiKey: process.env.AZURE_INFERENCE_SDK_KEY,
+	azureOpenAIApiKey: process.env.AZURE_OPENAI_API_KEY,
 	azureOpenAIApiInstanceName: process.env.INSTANCE_NAME, // In target url: https://<INSTANCE_NAME>.services...
 	azureOpenAIApiDeploymentName: process.env.AZUREAI_MODEL, // i.e "gpt-4o"
 	azureOpenAIApiVersion: "2024-08-01-preview", // In target url: ...<VERSION>
